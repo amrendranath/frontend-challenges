@@ -1,0 +1,113 @@
+:root {
+  /* PRIMARY COLORS */
+  --primary-dark-cyan: hsl(185, 75%, 39%);
+  --primary-desaturated-blue: hsl(229, 23%, 23%);
+  --primary-grayish-blue: hsl(227, 10%, 46%);
+
+  /* NEUTRAL COLORS */
+  --neutral-dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  background-color: var(--primary-dark-cyan);
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -770px -550px, 150px 300px;
+  letter-spacing: 1px;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--primary-dark-cyan);
+  border-radius: 19px;
+  background-color: #fff;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body img {
+  display: block;
+  position: relative;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100%;
+  border: 5px solid white;
+}
+
+.profile-text {
+  margin-top: -29px;
+}
+
+.name {
+  font-weight: 700;
+  color: var(--primary-desaturated-blue);
+}
+
+.age {
+  padding-left: 10px;
+  color: var(--primary-grayish-blue);
+}
+
+header img {
+  display: block;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
+}
+
+.desaturated-text {
+  font-weight: 700;
+  color: var(--primary-desaturated-blue);
+}
+
+.neutral-text {
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  color: var(--neutral-dark-gray);
+  letter-spacing: 2px;
+}
+
+.line {
+  color: var(--neutral-dark-gray);
+}
+
+footer {
+  display: flex;
+  height: 100px;
+  justify-items: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-position: -290px -450px, 750px 375px;
+  }
+}
